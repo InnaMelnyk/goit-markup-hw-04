@@ -31,6 +31,7 @@ img{display: block;
    max-width: 1158px;
    padding: 0 15px;
    margin: 0 auto;
+   
              }
 
 .header-container{
@@ -79,8 +80,27 @@ align-items: center;}
     letter-spacing: 0.02em;
     color: #2e2f42;
     padding: 24px 0;
+    
     }
     .header-links:hover,.header-links:focus{color:#404bbf;}
+
+
+    .header-links.current{
+      position:relative;
+      transition; 250ms color: color: #404bbf;
+    }
+
+       .header-links.current::after{
+         content:"";
+         position: absolute;
+         border-radius: 2px;
+            width: 48px;
+            height: 4px;
+            background-color:#404bbf;
+            left: 0px;
+            bottom: -1px;
+            
+       }
 
     .adress {
     font-family: "Roboto", sans-serif;
@@ -95,7 +115,9 @@ align-items: center;}
    .address-list{
    display: flex;
    align-items: center;
-   gap: 40px;}
+   gap: 40px;
+   transition;
+   250ms color: color: #404bbf;}
 
     .contacts{
     display: block;
@@ -108,7 +130,10 @@ align-items: center;}
 
         
     .main-section{
-    background-color: #2e2f42;
+    background-image: url(../images/people-office.jpg);
+  
+    background-repeat: no-repeat;
+    width: 1440px;
     padding-top: 188px;
     padding-bottom: 188px;
     
@@ -167,7 +192,30 @@ align-items: center;}
       padding-bottom: 120px;
 
        }
+.advantages-wrap{
+   display: flex;
+   width: 264px;
+   height:112px;
+   justify-content: center;
+   border: 1px solid #8e8f99;
+   border-radius: 4px;
+   background-color: #f4f4fd;
+   margin-bottom: 8px;
+     
+}
+.antenna{
+   align-self: center;}
+   
+   .punctuality{
+      align-self: center;
+   }
+   .diagram{
+      align-self: center;
+   }
 
+.astronaut{
+   align-self: center;
+}
     .adventeges-list{
       display: flex;
       gap:24px;
@@ -178,6 +226,9 @@ align-items: center;}
       width: calc((100% - 72px) / 4);
       margin: 0;
   }
+
+
+
 
        
     .adventeges-name{
